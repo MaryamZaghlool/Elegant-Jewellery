@@ -1,0 +1,531 @@
+/* @import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Playwrite AU SA", cursive;
+    /* font-family: "National Park", sans-serif; */
+}
+
+.register {
+    min-height: 100vh;
+    background: linear-gradient(to left, #212222, #F1A615, #3C3C3D);
+}
+
+.register,
+.register form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .content {
+    background: linear-gradient(to bottom, #212222, #3C3C3D);
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.register .content h2 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register form input {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0px;
+    width: 95%;
+    font-size: 20px;
+}
+
+::placeholder {
+    font-size: 20px;
+}
+
+.sign {
+    padding: 20px;
+    font-size: 21px;
+    font-weight: 600;
+    width: 130px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    color: black;
+    background-color: #F1A615;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #F1A615;
+    font-size: 22px;
+    align-self: flex-start;
+    margin-left: 25px;
+    line-height: 30px;
+    display: none;
+}
+
+
+/************************ Login ********************************/
+
+.login {
+    background: linear-gradient(to bottom, #212222, #F1A615, #3C3C3D);
+}
+
+.login .content {
+    height: 580px;
+}
+
+.login .content h2 {
+    margin-bottom: 40px;
+}
+
+.login .content input {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.login .sign {
+    margin-top: 50px;
+}
+
+/********************************** Home ***********************************/
+
+/********************************** header ***********************************/
+header {
+    background-color: #212222;
+}
+
+header img {
+    height: 70px;
+    margin-top: -50px !important;
+}
+
+header .navbar {
+    background-color: transparent;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+.navbar-nav li a {
+    font-size: 18px;
+    margin-right: 100px;
+    color: white;
+    font-family: "Playwrite AU SA", cursive;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f8b400 !important;
+}
+
+/********************************** slider ***********************************/
+
+.slider {
+    height: 89vh;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+
+.slider .arrow {
+    color: rgba(255, 255, 255, 0.712);
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.slider .fa-chevron-left {
+    left: 2%;
+}
+
+.slider .fa-chevron-right {
+    right: 2%;
+}
+
+.slider .caption {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    color: #F1A615;
+    font-family: "Playwrite AU SA", cursive;
+    font-weight: 700;
+}
+
+/************************************** store *****************************/
+
+.store,
+.product,
+.cart-page {
+    background-image: url(../images/body-bg-free-img.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    font-family: "Playwrite AU SA", cursive;
+}
+
+.store .cont {
+    padding-top: 150px;
+}
+
+.filter-buttons button {
+    background-color: #F1A615;
+    color: #212222;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.store .filter-buttons .btn-active,
+.store .filter-buttons .btn:hover {
+    background-color: #3C3C3D;
+    color: #F1A615;
+    font-size: 21px;
+}
+
+.store .filter-name {
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 100px;
+    margin: 70px;
+}
+
+.store #price-select,
+.store #color-select {
+    background-color: #3C3C3D;
+    color: #F1A615;
+    font-size: 16px;
+    padding: 14px;
+    width: 190px
+}
+
+.price,
+.color {
+    color: #F1A615;
+}
+
+.select option {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.products {
+    padding: 150px;
+    gap: 5rem;
+}
+
+.products .card {
+    border: 1px solid #F1A615;
+}
+
+.products .card img {
+    height: 400px;
+}
+
+.products .card-body {
+    background-color: #212222;
+    color: white;
+    height: fit-content;
+}
+
+.products .card-title {
+    color: #F1A615;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.products .card-text {
+    font-size: 20px;
+}
+
+/********************************** footer ******************************/
+
+footer {
+    background-color: #212222;
+    color: #F1A615;
+    font-family: "Playwrite AU SA", serif;
+}
+
+.top-footer img {
+    width: 100px;
+}
+
+.top-footer p {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.top-footer i {
+    font-size: 35px;
+}
+
+.top-footer .icon-color {
+    color: aliceblue;
+}
+
+.icons i {
+    color: #F1A615;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+footer hr {
+    border: none;
+    height: 0.5px;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+.copyRight {
+    text-align: center;
+    padding: 20px;
+}
+
+.copyRight .name,
+.copyRight .heart {
+    color: brown;
+}
+
+.copyRight .heart {
+    font-size: 30px;
+    animation-name: heart;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+@keyframes heart {
+    0% {
+        display: inline-block;
+        transform: scale(0.5);
+        color: #c226262c;
+    }
+
+    50% {
+        display: inline-block;
+        transform: scale(0.8);
+        color: brown;
+    }
+}
+
+/************************** arrow up ******************************/
+.fa-arrow-up {
+    position: fixed;
+    font-size: 27px;
+    color: #F1A615;
+    background-color: rgba(255, 255, 255, 0.329);
+    padding: 15px 17px;
+    border-radius: 50%;
+    right: -100px;
+    top: 70vh;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes arrow-come {
+    0% {
+        right: -100px;
+        top: 70vh;
+    }
+
+    100% {
+        right: 50px;
+        top: 85vh;
+    }
+}
+
+@keyframes arrow-go {
+    0% {
+        right: 50px;
+        top: 85vh;
+    }
+
+    100% {
+        right: -100px;
+        top: 70vh;
+    }
+}
+
+
+/***************************Selected Product ***************************/
+.product-info {
+    height: 89vh;
+    padding: 0;
+}
+
+.product .card-title,
+.product .card-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #F1A615;
+}
+
+.product .card-body {
+    height: fit-content;
+}
+
+.product .product-details {
+    font-size: 18px;
+    color: white;
+}
+
+.product .quantity input {
+    display: inline-block;
+    width: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 7px;
+    background-color: #3C3C3D;
+    color: #F1A615;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.product img {
+    width: 450px;
+    height: 500px;
+}
+
+.product .card-body {
+    height: 500px;
+}
+
+.product .card-text {
+    margin: 18px;
+}
+
+.add-cart,
+.cart-page button {
+    background-color: #F1A615;
+    color: #212222;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: block;
+    margin: 30px;
+    width: 200px;
+    text-align: center;
+    border: none;
+
+}
+
+/**************************** cart*************************/
+
+.products-count {
+    top: -15px;
+    background-color: #f1a815d3;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    left: 7px;
+    color: #212222;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-item .fa-cart-plus {
+    z-index: 5;
+}
+
+/**************************** cart page ******************************/
+
+.cart-page {
+    min-height: 60.6vh;
+}
+
+.cart-page .parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #F1A615;
+    padding: 20px 0px;
+    background-color: #3C3C3D;
+    margin-bottom: 20px;
+}
+.cart-empty{
+    height: 60.6vh;
+    display: flex;
+}
+.cart-empty h3{
+    color: #F1A615;
+    background-color:#3C3C3D;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+.cart-page img {
+    width: 60px;
+    height: 60px;
+}
+
+.cart-page input {
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    background-color: #3C3C3D;
+    color: #F1A615;
+}
+
+.cart-page h4 {
+    color: #F1A615;
+}
+
+.cart-page span {
+    display: inline-block;
+    margin: 50px 0px;
+    color: white;
+    font-size: 19px;
+}
+
+.cart-page button {
+    margin: 50px auto;
+}
+
+/************************************** modal *******************************/
+.modal-content {
+    --bs-modal-bg: #212222;
+}
+
+
+.popout-modal {
+    background-color: #3C3C3D;
+}
+
+.modal-dialog {
+    color: #F1A615;
+}
+
+.modal-dialog button {
+    background-color: #F1A615;
+    color: #212222;
+    border: none;
+    font-weight: 600;
+}
+
+.modal-dialog button:hover {
+    background-color: #f1a815c5;
+    color: #212222;
+}
