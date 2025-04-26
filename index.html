@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="" />
+    <title>Register</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="register" method="POST" action="#">
+      <div class="content d-row col-12 col-sm-10 col-md-7 col-xl-4">
+        <h2>Sign Up</h2>
+        <form class="register-form">
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            placeholder="Enter Your Name"
+            required
+          />
+          <p id="error-Name" class="error-message">Enter Valid Name</p>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <p id="error-email" class="error-message">Enter Valid Email</p>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Your Password"
+            required
+          />
+          <p id="error-password" class="error-message">
+            Password must be at least 8 characters and include uppercase,
+            lowercase, number, and special character.
+          </p>
+          <input
+            type="password"
+            name="Confirm password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+            required
+          />
+          <p id="error-confirm" class="error-message">
+            Enter The same Password in top
+          </p>
+          <button class="sign">Sign UP</button>
+        </form>
+      </div>
+    </section>
+    <script src="JS/register.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
